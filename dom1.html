@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>DOM </h1>
+    <h1>CSE</h1>
+
+    <body>
+        <h1>DOM</h1>
+        <h1>CSE</h1>
+
+        <!-- Added container and control buttons -->
+        <div id="container"></div>
+        <br>
+        <button onclick="addImg()">Add Image</button>
+        <button onclick="resizeImg()">Resize Image</button>
+        <button onclick="deleteImg()">Delete Image</button>
+
+
+
+
+
+        <script>
+            let h1 = document.querySelectorAll("h1");
+
+            // Styling the second h1
+            h1[1].innerText = "DOM Manipulation - Updated";
+            h1[1].style.color = "red";
+
+            // Styling the first h1
+            h1[0].style.fontSize = "30px";
+            h1[0].style.backgroundColor = "yellow";
+            h1[0].style.borderRadius = "10px";
+            h1[0].style.padding = "10px";
+            h1[0].style.textAlign = "center";
+            h1[0].style.textShadow = "2px 2px 5px gray";
+            h1[0].style.fontFamily = "Arial, sans-serif";
+            h1[0].style.textTransform = "uppercase";
+            h1[0].style.letterSpacing = "2px";
+            h1[0].style.wordSpacing = "5px";
+            h1[0].style.textDecoration = "underline";
+            h1[0].style.textDecorationColor = "blue";
+            h1[0].style.textDecorationStyle = "dashed";
+            h1[0].style.textDecorationThickness = "3px";
+            h1[0].style.textDecorationSkipInk = "none";
+            h1[0].style.textDecorationLine = "underline";
+
+            let img;
+            function addImg() {
+                img = document.createElement("img");
+                img.src = "https://static.boostmytalent.com/img/univ/parul-university-vadodara-campus-admission.webp";
+                document.getElementById("container").appendChild(img);
+            }
+
+            function resizeImg() {
+                if (img) {
+                    img.style.width = "300px";
+                    img.style.height = "200px";
+                }
+            }
+
+            function deleteImg() {
+                if (img) {
+                    img.remove();
+                    img = null;
+                }
+            }
+
+
+        </script>
+
+
+    </body>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling in JS </title>
+</head>
+<body onload="pageLoaded()">
+    <h2 onmouseover="hoverTitle(this)">Parul student Registration Form</h2>
+    <form action="">
+           <!--Name--> 
+          Username: <input type="text" id="name" placeholder="Enter your Name" onfocus="focusField(this)" onblur="blurField(this)" onkeyup="showlength(this)">
+            <span id="msg"></span><br><br>
+            Age: <input type="number" id="age" placeholder="Enter your Age" onkeyup="showLength(this)" onkeypress="allowOnlyNumbers(event)" onkeyup="LiveAgeCheck(this)"><br><br>
+            <span id="msg2"></span><br><br>
+    </form>
+    <script>
+        //onload event
+        function pageLoaded(){
+            alert("Welcome to the Event Handling Demo! Page loaded successfully");
+        }
+        function hoverTitle(element){
+            element.style.color="blue";
+            element.style.fontWeight="bold";
+        }
+        function onmouseoutTitle(element){
+            element.style.color="";
+            element.style.fontWeight = " ";
+        }
+        function onfocusField(element){
+            element.style.backgroundColor="lightblue";
+        }
+        function onblurField(element){
+            element.style,backgroundColor="white";
+        }
+        function onkeyupField(element){
+            document.getElementById("msg").innerText="Length: "+element.value.length;
+        }
+        function onketupField(element){
+            document.getElementById("msg").innerText="Length: "+element.value.length;
+        }
+    </script>
+
+
+   <!-- //Feature                    Concept
+    Page load alert              onload event
+    Input Highlights             onfocus and onblur events
+    Live typing check            onkeyup
+    Restrict input to numbers    onkeypress
+    Dropdown change alert        onchange
+    Button click alert           onclick always written in input tag
+    Hover effect                 onmouseover and onmouseout
+    Form validation & submit     onsubmit -->
+    
+</body>
+</html>

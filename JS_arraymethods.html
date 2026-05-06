@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+     <script>
+    var numbers = [10, 20, 30, 40];
+    document.write("The numbers are: ", numbers);
+    document.write("<br>");
+    console.log("The numbers are: ", numbers);
+
+    // numbers.push(50);
+    // document.write("The numbers after push are: ", numbers);
+    // document.write("<br>");
+    // console.log("The numbers after push are: ", numbers);
+
+    // numbers.pop();
+    // document.write("The numbers after pop are: ", numbers);
+    // document.write("<br>");
+    // console.log("The numbers after pop are: ", numbers);
+
+    // numbers.unshift(5);
+    // document.write("The numbers after unshift are: ", numbers);
+    // document.write("<br>");
+    // console.log("The numbers after unshift are: ", numbers);
+    // numbers.shift()
+    // document.write("The numbers after shift are: ",numbers)
+    // document.write("<br>")
+    // console.log("The numbers after shift are: ",numbers)
+    // document.write("The length of the numbers array is: ",numbers.length)
+    // document.write("<br>")
+    // numbers.indexOf(30)
+    // document.write("The index of 30 is: ",numbers.indexOf(30))
+    // document.write("<br>")
+    // numbers[1]="Parul"
+    // document.write("The numbers after replacing are:  ",numbers)
+    // numbers[4]="Pranithaa"
+    // document.write("The numbers after adding Pranithaa are: ",numbers)
+    // document.write("<br>")
+    // console.log("The numbers after adding Pranithaa are: ",numbers)
+    var numbers1=numbers.slice(0,3)
+    document.write("The slice array is: ",numbers1)
+    document.write("<br>")
+    console.log("The sliced array is ",numbers1)
+    var numbers2=numbers.slice()
+    document.write("The copied array is: ",numbers2)
+    document.write("<br>")
+    console.log("The copied array is: ",numbers2)
+    numbers[35]="Google"
+    document.write("The numbers after adding Google are: ",numbers)
+    document.write("<br>")
+    console.log("The numbers after adding Google are: ",numbers)
+
+</script>
+</body>
+</html>
